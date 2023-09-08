@@ -2,7 +2,7 @@
  * \file   Entreprise.cpp
  * \brief  Definition de la classe Entreprise
  * 
- * \author Pierre
+ * \author PierreV
  * \version 0.1
  * \date   June 2023
  * 
