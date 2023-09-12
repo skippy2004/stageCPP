@@ -12,33 +12,40 @@ int main()
 	Entreprise* ADP = new Entreprise("ADP", "Auray");
 	cout << ADP->getVilleEntreprise() << endl;
 	ADP->setVilleEntreprise("paris");
-	ADP->getVilleEntreprise();
+	cout << ADP->getVilleEntreprise() << endl;
+	cout << endl;
 
 	Entreprise* volt = new Entreprise("volt", "brie");
-	volt->getVilleEntreprise();
+	cout << volt->getVilleEntreprise() << endl;
 	volt->setVilleEntreprise("orlean");
-	volt->getVilleEntreprise();
+	cout << volt->getVilleEntreprise() << endl;
 
 	Mission transport, energie;
 	transport.setNbPersonne(32);
 	transport.setDescriptifMission("regler les plan de vole");
 	transport.setNbHeure(180);
 	transport.setEntrepriseMission(ADP);
+	cout << endl;
 
 	energie.setNbPersonne(13);
 	energie.setDescriptifMission("quantiter d'energie deservie");
 	energie.setNbHeure(64);
 	energie.setEntrepriseMission(volt);
+	cout << endl;
+	cout << endl;
 
-	transport.getNbPersonne();
-	transport.getDescriptifMission();
-	transport.getNbHeure();
-	transport.getEntrepriseMission();
+	cout << transport.getNbPersonne() << endl;
+	cout << transport.getDescriptifMission() << endl;
+	cout << transport.getNbHeure() << endl;
 
-	transport.getNbPersonne();
-	transport.getDescriptifMission();
-	transport.getNbHeure();
-	transport.getEntrepriseMission();
+	cout << (transport.getEntrepriseMission())->getNomEntreprise()<< endl;
+	cout << endl;
+
+	cout << energie.getNbPersonne() << endl;
+	cout << energie.getDescriptifMission() << endl;
+	cout << energie.getNbHeure() << endl;
+	cout << (energie.getEntrepriseMission())->getNomEntreprise() << endl;
+	cout << endl;
 
 
 }

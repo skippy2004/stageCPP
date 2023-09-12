@@ -137,9 +137,9 @@ void  Mission::setNbHeure(int nbHeurev) {
 
 
 Entreprise* Mission::getEntrepriseMission() {
-    return this-> entrepriseMission;
+    return this->entrepriseMission;
 }
 
 void  Mission::setEntrepriseMission(Entreprise *entrepriseMission) {
-    this-> entrepriseMission = entrepriseMission;
+    this->entrepriseMission = entrepriseMission;
 }
