@@ -61,7 +61,7 @@ public:
     void setNbHeure(int nbHeurev);
 
     Entreprise* getEntrepriseMission();
-    void setEntrepriseMission(string *entrepriseMission);
+    void setEntrepriseMission(Entreprise *entrepriseMission);
 
 };
 

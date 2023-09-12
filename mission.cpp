@@ -133,6 +133,6 @@ Entreprise* Mission::getEntrepriseMission() {
     return this-> entrepriseMission;
 }
 
-void  Mission::setEntrepriseMission(string *entrepriseMission) {
-    this-> entrepriseMission = *entrepriseMission;
+void  Mission::setEntrepriseMission(Entreprise *entrepriseMission) {
+    this-> entrepriseMission = entrepriseMission;
 }
