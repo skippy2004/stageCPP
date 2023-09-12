@@ -50,12 +50,14 @@ public:
     /*Classe sous forme canonique*/
     Mission();
     ~Mission();
-    
+
+    Mission(string descriptifMission, Entreprise *entrepriseMission, int nbPersonne, int nbHeure);
+
     int getNbPersonne();
     void setNbPersonne(int nbPersonnev);
 
-    string getDescriptifMiossion();
-    void setDescriptifMiossion(string descriptifMissionv);
+    string getDescriptifMission();
+    void setDescriptifMission(string descriptifMissionv);
 
     int getNbHeure();
     void setNbHeure(int nbHeurev);

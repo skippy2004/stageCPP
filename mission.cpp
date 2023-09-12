@@ -31,6 +31,13 @@ Mission::Mission() {
 
 }
 
+
+Mission::Mission(string descriptifMission, Entreprise* entrepriseMission, int nbPersonne, int nbHeure) {
+    this->descriptifMission = descriptifMission;
+    this->entrepriseMission = entrepriseMission;
+    this->nbPersonne = nbPersonne;
+    this->nbHeure = nbHeure;
+}
 /**
  * \brief Constructeur avec parametres rentres en argument
  *
@@ -48,7 +55,7 @@ Mission::Mission() {
  * \brief Destructeur
  *
  */
-Mission::~Mission() {
+Mission::~Mission(){
 
     cout << "Destrcution de la mission " << endl;
 
@@ -99,12 +106,12 @@ void  Mission::setNbPersonne(int nbPersonnev) {
 
 
 
-std::string Mission::getDescriptifMiossion()
+std::string Mission::getDescriptifMission()
 {
     return this->descriptifMission;
 }
 
-void Mission::setDescriptifMiossion(string descriptifMissionv) {
+void Mission::setDescriptifMission(string descriptifMissionv) {
     this->descriptifMission = descriptifMissionv;
 }
 

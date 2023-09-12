@@ -2,10 +2,45 @@
 //
 
 #include <iostream>
+#include "Entreprise.h"
+#include "mission.h"
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Entreprise* ADP = new Entreprise("ADP", "Auray");
+	cout << ADP->getVilleEntreprise() << endl;
+	ADP->setVilleEntreprise("paris");
+	ADP->getVilleEntreprise();
+
+	Entreprise* volt = new Entreprise("volt", "brie");
+	volt->getVilleEntreprise();
+	volt->setVilleEntreprise("orlean");
+	volt->getVilleEntreprise();
+
+	Mission transport, energie;
+	transport.setNbPersonne(32);
+	transport.setDescriptifMission("regler les plan de vole");
+	transport.setNbHeure(180);
+	transport.setEntrepriseMission(ADP);
+
+	energie.setNbPersonne(13);
+	energie.setDescriptifMission("quantiter d'energie deservie");
+	energie.setNbHeure(64);
+	energie.setEntrepriseMission(volt);
+
+	transport.getNbPersonne();
+	transport.getDescriptifMission();
+	transport.getNbHeure();
+	transport.getEntrepriseMission();
+
+	transport.getNbPersonne();
+	transport.getDescriptifMission();
+	transport.getNbHeure();
+	transport.getEntrepriseMission();
+
+
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

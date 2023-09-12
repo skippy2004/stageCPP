@@ -19,6 +19,7 @@ using namespace std;
 /**
  * \brief Constructeur par default 
  * \li Nom = anonyme
+ * \li Nom = anonyme    #apres changement pour teste
  * \li Ville = inconnu
  *  
  */
